@@ -1,8 +1,9 @@
 import discord
 import time
 from discord.ext import commands
+import os
 
-TOKEN = 'NzcxOTE2NDY3NTIzNTUxMjQz.X5zFOw.xaTuS5gErYTbINaSuGtT4dAAQcw'
+TOKEN = os.getenv('discord_token')
 client = commands.Bot(command_prefix='os.')
 
 @client.command()
